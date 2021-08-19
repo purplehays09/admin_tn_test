@@ -1,4 +1,6 @@
 require 'rails_helper'
+require './app/models/user'
+
 
 RSpec.describe User do
   subject { 
