@@ -12,4 +12,11 @@ RSpec.describe User do
      expect(subject).to be_valid
    end
 
+   it "is not valid without email attribute" do
+    subject.email = nil 
+    expect(subject).to_not be_valid
+     
+   end
+   
+
 end
