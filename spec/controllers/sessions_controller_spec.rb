@@ -16,10 +16,8 @@ RSpec.describe SessionsController do
         email:'hey@joe1.com',
         password:'guest'
       )
-      puts"\n\n account.email = #{account.email}\n\n"
       
       user = User.find_by(email: account.email)
-      puts"\n\nuser = #{user}\n\n"
       
       expect(user.present?).to be(true)
     end
