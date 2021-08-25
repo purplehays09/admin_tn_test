@@ -18,6 +18,16 @@ RSpec.describe People do
     expect(subject).to_not be_valid
      
    end
+   it "is not valid without name attribute" do
+    subject.name = nil 
+    expect(subject).to_not be_valid
+     
+   end
+   it "is not valid without phone_number attribute" do
+    subject.phone_number = nil 
+    expect(subject).to_not be_valid
+     
+   end
    
 
 end
