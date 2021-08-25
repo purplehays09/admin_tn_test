@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   delete 'logout', to: 'sessions#destroy'
 
+  get 'people', to: 'peoples#new'
+
   root to: "main#index"
 end
